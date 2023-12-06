@@ -1,13 +1,8 @@
-# Rice-Website
+# React + Vite
 
-## What is Rice?
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-> Rice is a rock trio based in Tri-Cities Washington.
->
-> This site is purpose is to represent and market the bands music, social, tour, and merch.
+Currently, two official plugins are available:
 
-## tinyPNG
-
-> Use this url to optimize images: [tinify](https://tinypng.com/)
->
-> NOTE: images must be at least 5MB or less to compress/optimize.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
