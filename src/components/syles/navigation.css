@@ -1,0 +1,58 @@
+/* CSS for Navigation component */
+
+.nav_bar {
+    background-color: #FFFFF9;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+.nav_bar {
+    position: sticky;
+    top: 0;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.logo{
+    color: #0F0F0F;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.menu_items {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu {
+    display: flex;
+    padding:0;
+    margin: 0;
+}
+
+.menu > li, a {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 8px;
+    color: #0F0F0F;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* CHANGE LATER WHEN MOBILE */
+/* TODO FOR GRANT */
+.hamburger {
+    display: none;
+}
+
+span > img {
+    display: inline-block;
+    vertical-align:middle;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
