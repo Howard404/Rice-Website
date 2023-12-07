@@ -1,0 +1,32 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 11px 0 11px;
+}
+
+.menu_items {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu {
+    display: flex;
+    padding:0;
+    margin: 0;
+}
+
+.menu > li, a {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 5px;
+    color: #0F0F0F;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* CHANGE LATER WHEN MOBILE */
+.hamburger {
+    display: none;
+}
+
