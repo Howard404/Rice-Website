@@ -1,8 +1,8 @@
 // import { useState } from "react";
 import './syles/navigation.css';
 import '../index.css';
-import darkMode from '../../public/images/dark.svg';
-import lightMode from '../../public/images/sun.svg';
+import darkMode from '/images/dark.svg';
+import lightMode from '/images/sun.svg';
 import { useState } from 'react';
 
 export default function Navigation() {
