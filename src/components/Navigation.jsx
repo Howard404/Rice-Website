@@ -49,18 +49,18 @@ export default function Navigation() {
         <div className="nav_bar">
             <div className="nav_container">
 
-                <div className="icon_container logo"> R.I.C.E <span><img src={displayMode ? darkMode : lightMode} alt="dark mode" width={20} onClick={toggleDarkMode}/></span></div>
+                <div className="icon_container logo"> R.I.C.E <span><img src={displayMode ? darkMode : lightMode} alt="dark mode" onClick={toggleDarkMode}/></span></div>
 
                 <div className="menu_items">  
 
                     <div className='menu_items_mobile'>  
                         <ul className="menu">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#">HOME</a>
                             </li>
 
                             <li>
-                                <a href="#">Tour</a>
+                                <a href="#">TOUR</a>
                             </li>
 
                             <li>
@@ -68,7 +68,7 @@ export default function Navigation() {
                             </li>
 
                             <li>
-                                <a href="#">Newletter</a>
+                                <a href="#">NEWSLETTER</a>
                             </li>
                         </ul>
                     </div>
