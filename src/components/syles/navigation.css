@@ -44,6 +44,41 @@
     font-weight: 500;
 }
 
+a {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 8px;
+    color: #0F0F0F;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+
+    /* font-size: 1.8rem; */
+    /* letter-spacing: 4px; */
+}
+
+a:hover {
+    color: #000;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
 /* CHANGE LATER WHEN MOBILE */
 /* TODO FOR GRANT */
 
@@ -58,10 +93,14 @@
 
 span > img {
     display: inline-block;
+    width: 25px;
     vertical-align:middle;
     margin-bottom: 2px;
     cursor: pointer;
 }
+
+
+/* Mobile viewport styles */
 
 @media (max-width: 700px) {
     .menu {
@@ -73,7 +112,7 @@ span > img {
     .visible {
         visibility: visible;
         opacity: 1;
-        transition: opacity 2s ease-in-out;
+        transition: opacity 1.5s ease-in-out;
     }
 
     .hamburger_container {
@@ -106,18 +145,15 @@ span > img {
 
     .menu {
         flex-direction: column;
-        margin: 60px;
     }
 
     .menu > li {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         text-align: center;
     }
 
-    .menu > li > a {
-        font-size: 2.1rem;
-        color: #0F0F0F;
-        letter-spacing: 7px;
-
+    a {    
+        font-size: 1.8rem;
+        letter-spacing: 4px;
     }
 }

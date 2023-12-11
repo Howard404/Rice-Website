@@ -13,7 +13,7 @@ function App() {
         {/* Remove content in main and add Hero component */}
         <h1 style={{textAlign: 'center'}}>Rice Band Site</h1>
         <div className="remove-later" style={{textAlign: 'center'}}>
-          <img src="/images/hero.jpeg" alt="hero image" width='40%'/>
+          <img src="/images/hero.jpeg" alt="hero image" width='80%'/>
         </div>
 
       </main>
