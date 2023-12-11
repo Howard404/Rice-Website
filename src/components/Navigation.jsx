@@ -3,13 +3,16 @@ import './syles/navigation.css';
 import '../index.css';
 import darkMode from '/images/dark.svg';
 import lightMode from '/images/sun.svg';
+import hamburger from '/images/menu-hamburger.svg';
+import x_circle from '/images/x-circle.svg';
 import { useState } from 'react';
 
 export default function Navigation() {
     
     const [displayMode, setDisplayMode] = useState(false);
+    const [hamburgerMode, setHamburgerMode] = useState(true);
 
-    function toggleMode() {
+    function toggleDarkMode() {
         setDisplayMode(!displayMode);
         handleToggleEvent(displayMode);
     }
@@ -24,36 +27,54 @@ export default function Navigation() {
         }
     }
 
+    function handleHamburgerToggle() {
+        setHamburgerMode(!hamburgerMode);
+        toggleHamburgerMode(hamburgerMode)
+    }
+
+    function toggleHamburgerMode(modeValue) {
+        if(modeValue){
+            document.querySelector('.menu_items_mobile').classList.add('active');
+            document.querySelector('.menu').classList.add('visible');
+        }else {
+            document.querySelector('.menu_items_mobile').classList.remove('active');
+            document.querySelector('.menu').classList.remove('visible');
+        }
+
+    }
+
+
     // JSX RENDERED PAGE
     return (
         <div className="nav_bar">
             <div className="nav_container">
 
-                <div className="icon_container logo">Rice Band <span><img src={displayMode ? lightMode : darkMode} alt="dark mode" width={20} onClick={toggleMode}/></span></div>
+                <div className="icon_container logo"> R.I.C.E <span><img src={displayMode ? darkMode : lightMode} alt="dark mode" width={20} onClick={toggleDarkMode}/></span></div>
 
-                <div className="menu_items menu_items_mobile">  
+                <div className="menu_items">  
 
-                    <ul className="menu">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
+                    <div className='menu_items_mobile'>  
+                        <ul className="menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Tour</a>
-                        </li>
+                            <li>
+                                <a href="#">Tour</a>
+                            </li>
 
-                        <li>
-                            <a href="#">EPK</a>
-                        </li>
+                            <li>
+                                <a href="#">EPK</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Newletter</a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="#">Newletter</a>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div className="hamburger_container">
-                            {/* Position Hamburger as absolute */}
-                            <input type='checkbox' className="hamburger"></input>
+                            <img className='hamburger' src={hamburgerMode ? hamburger : x_circle} alt="Hamburger Menu" width={25} onClick={handleHamburgerToggle}/>
                     </div>
 
                 </div>

@@ -46,8 +46,14 @@
 
 /* CHANGE LATER WHEN MOBILE */
 /* TODO FOR GRANT */
-.hamburger {
+
+.hamburger_container{
     display: none;
+}
+.hamburger {
+    vertical-align: bottom;
+    margin-bottom: 2px;
+    cursor: pointer;
 }
 
 span > img {
@@ -55,4 +61,63 @@ span > img {
     vertical-align:middle;
     margin-bottom: 2px;
     cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .visible {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s ease-in-out;
+    }
+
+    .hamburger_container {
+        display: block;
+        z-index: 1;
+    }
+
+    .logo{
+        z-index: 1;
+    }
+
+    .menu_items_mobile {
+        z-index: 0;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #39B5E0;
+        width: 0%;
+        transition: width 0.5s ease;
+    }
+
+    .active {
+        width: 70%;
+        transition: width 0.5s ease;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 60px;
+    }
+
+    .menu > li {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .menu > li > a {
+        font-size: 2.1rem;
+        color: #0F0F0F;
+        letter-spacing: 7px;
+
+    }
 }
