@@ -14,11 +14,8 @@ export default function Navigation() {
 
     function toggleDarkMode() {
         setDisplayMode(!displayMode);
-        handleToggleEvent(displayMode);
-    }
 
-    function handleToggleEvent(modeValue) {
-        if(modeValue){
+        if(displayMode){
             document.querySelector('main').style.background = '#0F0F0F';
             document.querySelector('main').style.color = '#FFFFF9';
         }else {
@@ -27,20 +24,17 @@ export default function Navigation() {
         }
     }
 
+
     function handleHamburgerToggle() {
         setHamburgerMode(!hamburgerMode);
-        toggleHamburgerMode(hamburgerMode)
-    }
 
-    function toggleHamburgerMode(modeValue) {
-        if(modeValue){
+        if(hamburgerMode){
             document.querySelector('.menu_items_mobile').classList.add('active');
             document.querySelector('.menu').classList.add('visible');
         }else {
             document.querySelector('.menu_items_mobile').classList.remove('active');
             document.querySelector('.menu').classList.remove('visible');
         }
-
     }
 
 
