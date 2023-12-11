@@ -49,7 +49,7 @@ export default function Navigation() {
         <div className="nav_bar">
             <div className="nav_container">
 
-                <div className="icon_container logo"> Rice Band <span><img src={displayMode ? darkMode : lightMode} alt="dark mode" width={20} onClick={toggleDarkMode}/></span></div>
+                <div className="icon_container logo"> R.I.C.E <span><img src={displayMode ? darkMode : lightMode} alt="dark mode" width={20} onClick={toggleDarkMode}/></span></div>
 
                 <div className="menu_items">  
 
