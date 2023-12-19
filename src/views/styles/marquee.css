@@ -1,0 +1,7 @@
+.marquee-container {
+    /* background-color: aqua; */
+    padding: 100px 0 100px 0;
+    border-top: 1px solid #0f0f0f;
+    border-bottom: 1px solid #0f0f0f;
+    font-size: 8rem;
+}

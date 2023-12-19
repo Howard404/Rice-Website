@@ -1,5 +1,6 @@
 import './App.css'
 import Navigation from './components/Navigation'
+import MarqueeSection from './views/MarqueeSection';
 
 /* Do not forget to import Hero from ./view/Hero' */
 
@@ -17,6 +18,7 @@ function App() {
                     <img src="/images/hero.jpeg" alt="hero image" width='80%' />
                 </div>
 
+                <MarqueeSection/>
             </main>
         </>
     )
