@@ -1,0 +1,83 @@
+.music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.music-content {
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px #0f0f0f solid;
+    /* background-color: gray; */
+}
+
+.music-image-song {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.music-image-song img {
+    width: 100%;
+}
+
+.artist-song h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.artist-song h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.music-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    /* border: 1px 0 #0f0f0f solid; */
+    padding: 5px;
+}
+
+.song span {
+    margin-left: 1rem;
+    font-size: 1.375rem;
+}
+
+.shuffle-volume-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.375rem;
+}
+
+@media (max-width: 800px) {
+    .music-image-song {
+        gap: 1rem;
+    }
+
+    .artist-song h1, h3 {
+        text-align: center;
+    }
+
+    .artist-song h1 {
+        font-size: 2rem;
+    }
+
+    .artist-song h3 {
+        font-size: 1rem;
+    }
+
+}

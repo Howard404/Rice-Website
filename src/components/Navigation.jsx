@@ -18,6 +18,7 @@ export default function Navigation() {
         if(displayMode){
             document.querySelector('main').style.background = '#0F0F0F';
             document.querySelector('main').style.color = '#FFFFF9';
+            document.querySelector('main').style.borderColor = '#FFFFF9';
         }else {
             document.querySelector('main').style.background = '#FFFFF9';
             document.querySelector('main').style.color = '#0F0F0F';

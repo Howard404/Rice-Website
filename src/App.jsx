@@ -1,6 +1,8 @@
 import './App.css'
 import Navigation from './components/Navigation'
 import MarqueeSection from './views/MarqueeSection';
+// import MusicPlayer from './views/MusicPlayer'
+import MusicSection from './views/MusicSection';
 
 /* Do not forget to import Hero from ./view/Hero' */
 
@@ -18,7 +20,9 @@ function App() {
                     <img src="/images/hero.jpeg" alt="hero image" width='80%' />
                 </div>
 
-                <MarqueeSection/>
+                <MarqueeSection />
+
+                <MusicSection />
             </main>
         </>
     )
