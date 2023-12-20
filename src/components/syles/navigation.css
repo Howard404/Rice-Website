@@ -5,6 +5,7 @@
     padding-bottom: 0.75rem;
     padding-top: 0.75rem;
     border-bottom: 1px solid #000;
+    z-index: 10;
 }
 
 .nav_bar {
