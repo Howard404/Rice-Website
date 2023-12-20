@@ -4,6 +4,7 @@
     border-top: 1px solid #0f0f0f;
     border-bottom: 1px solid #0f0f0f;
     font-size: 8rem;
+    font-weight: 200;
 }
 
 @media (max-width: 1200px) {
