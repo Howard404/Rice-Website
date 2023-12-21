@@ -1,0 +1,47 @@
+.music-section {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+.music-header h1 {
+    font-size: 5rem;
+}
+
+.music-header h2 {
+    font-size: 2rem;
+}
+
+.music-subheader {
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 1500px) {
+    .music-header h1 {
+        font-size: 4rem;
+    }
+    
+    .music-header h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .music-header h1 {
+        font-size: 2.375rem;
+        margin-top: 2rem;
+    }
+    
+    .music-header h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .music-subheader {
+        margin-top: 1rem;
+    }
+}
