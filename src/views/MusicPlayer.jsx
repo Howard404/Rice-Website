@@ -12,7 +12,6 @@ export default function MusicPlayer() {
 
     const viewport = useMediaQuery('(max-width:800px)');
 
-
   return (
     <div className='music-container'>
         <div className="music-content white-player-border">
@@ -34,11 +33,17 @@ export default function MusicPlayer() {
                 </div>
             </div>
 
+            <div className="audio-file">
+                <audio>
+                    <source src='/audio/Slow_Down.wav'/>  
+                </audio>
+            </div>
+
             <div className="music-song-list">
                 <div className="song-list">
-                    <div className="song">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Slow Down</span></div>
-                    <div className="song">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Hey Ruby</span></div>
-                    <div className="song">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>East 13<sup>th</sup></span></div>
+                    <div className="song slow-down">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Slow Down</span></div>
+                    <div className="song hey-ruby">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Hey Ruby</span></div>
+                    <div className="song east-13th">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>East 13<sup>th</sup></span></div>
                 </div>
             </div>
 
