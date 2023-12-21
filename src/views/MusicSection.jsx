@@ -4,6 +4,7 @@ import './styles/music-section.css'
 export default function MusicSection() {
   return (
     <div className="music-section-container">
+         {/* <MusicPlayer/> */}
         <div className="music-section">
 
             <div className="music-header">
@@ -13,7 +14,7 @@ export default function MusicSection() {
                     <h2>Need more songs?</h2>
                     <h2>No worries, check us out on social media! 🙇‍♂️</h2>
                 </div>
-                
+
             </div>
             <MusicPlayer/>
         </div>

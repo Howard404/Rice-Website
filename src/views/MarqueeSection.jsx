@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function MarqueeSection() {
 
+
   let [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   window.onresize = window.onload = function() {
@@ -12,7 +13,7 @@ export default function MarqueeSection() {
   }
 
   return (
-    <div className="marquee-container">
+    <div className="marquee-container white-border">
       <Marquee autoFill speed={screenWidth > 1200 ? 130 : 80}>Rice Band - Music - Tour - News -&nbsp;</ Marquee>
     </div>
   )

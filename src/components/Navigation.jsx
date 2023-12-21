@@ -7,7 +7,8 @@ import hamburger from '/images/menu-hamburger.svg';
 import x_circle from '/images/x-circle.svg';
 import { useState } from 'react';
 
-export default function Navigation() {
+// eslint-disable-next-line react/prop-types
+export default function Navigation({displayModeState}) {
     
     const [displayMode, setDisplayMode] = useState(false);
     const [hamburgerMode, setHamburgerMode] = useState(true);
@@ -15,14 +16,16 @@ export default function Navigation() {
     function toggleDarkMode() {
         setDisplayMode(!displayMode);
 
-        if(displayMode){
-            document.querySelector('main').style.background = '#0F0F0F';
-            document.querySelector('main').style.color = '#FFFFF9';
-            document.querySelector('main').style.borderColor = '#FFFFF9';
-        }else {
-            document.querySelector('main').style.background = '#FFFFF9';
-            document.querySelector('main').style.color = '#0F0F0F';
-        }
+        displayModeState(!displayMode);
+
+        // if(displayMode){
+        //     document.querySelector('main').style.background = '#0F0F0F';
+        //     document.querySelector('main').style.color = '#FFFFF9';
+        //     document.querySelector('main').style.borderColor = '#FFFFF9';
+        // }else {
+        //     document.querySelector('main').style.background = '#FFFFF9';
+        //     document.querySelector('main').style.color = '#0F0F0F';
+        // }
     }
 
 

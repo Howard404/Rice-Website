@@ -15,7 +15,7 @@ export default function MusicPlayer() {
 
   return (
     <div className='music-container'>
-        <div className="music-content">
+        <div className="music-content white-border">
 
             <div className="music-image-song">
                 <img src="/images/song_1.jpg" alt="Ryan" />
@@ -29,7 +29,7 @@ export default function MusicPlayer() {
             <div className="music-controls">
                 <div className="controls">
                     <SkipPreviousIcon sx={{fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/>
-                    <PlayArrowIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', margin: '1rem 3rem 0 3rem', cursor: 'pointer'}}/>
+                    <PlayArrowIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', margin: '1rem 3rem 0 3rem', cursor: 'pointer', border: '1px #0f0f0f solid', borderRadius: '25px'}}/>
                     <SkipNextIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/>
                 </div>
             </div>

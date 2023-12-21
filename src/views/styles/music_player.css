@@ -10,8 +10,16 @@
     max-width: 450px;
     padding: 2rem;
     border-radius: 10px;
-    border: 1px #0f0f0f solid;
+    /* border: 1px #0f0f0f solid; */
     /* background-color: gray; */
+}
+
+.black-player-border {
+    border: 1px #0f0f0f solid;
+}
+
+.white-player-border {
+    border: 1px #fffff9 solid;
 }
 
 .music-image-song {
@@ -52,9 +60,17 @@
     padding: 5px;
 }
 
+.song:hover {
+    background-color: #8fe3fe97;
+}
+
 .song span {
     margin-left: 1rem;
     font-size: 1.375rem;
+}
+
+.song-list {
+    cursor: pointer;
 }
 
 .shuffle-volume-container {
