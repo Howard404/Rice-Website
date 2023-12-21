@@ -15,7 +15,7 @@ export default function MusicPlayer() {
 
   return (
     <div className='music-container'>
-        <div className="music-content white-border">
+        <div className="music-content white-player-border">
 
             <div className="music-image-song">
                 <img src="/images/song_1.jpg" alt="Ryan" />

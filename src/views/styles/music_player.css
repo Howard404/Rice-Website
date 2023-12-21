@@ -84,12 +84,13 @@
         gap: 1rem;
     }
 
-    .artist-song h1, h3 {
+    .artist-song h3 {
         text-align: center;
     }
 
     .artist-song h1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     .artist-song h3 {
