@@ -34,6 +34,7 @@
     .music-header h1 {
         font-size: 2.375rem;
         margin-top: 2rem;
+        text-align: center;
     }
     
     .music-header h2 {
