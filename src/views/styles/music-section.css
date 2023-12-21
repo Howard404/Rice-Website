@@ -25,7 +25,7 @@
     }
     
     .music-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
         text-align: center;
     }
 }
@@ -38,8 +38,7 @@
     }
     
     .music-header h2 {
-        font-size: 1rem;
-        text-align: center;
+        font-size: 1.375rem;
     }
 
     .music-subheader {
