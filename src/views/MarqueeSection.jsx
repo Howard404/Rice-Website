@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function MarqueeSection() {
 
-
   let [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   window.onresize = window.onload = function() {
