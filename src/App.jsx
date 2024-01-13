@@ -5,6 +5,7 @@ import MarqueeSection from './views/MarqueeSection';
 // import MusicPlayer from './views/MusicPlayer'
 import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
+import HeroSection from './views/Hero';
 
 /* Do not forget to import Hero from ./view/Hero' */
 
@@ -17,7 +18,7 @@ function App() {
 
         console.log(state);
 
-        if(displayState){
+        if (displayState) {
             document.querySelector('main').style.background = '#0F0F0F';
             document.querySelector('main').style.color = '#FFFFF9';
             document.querySelector('main').style.borderColor = '#FFFFF9';
@@ -25,7 +26,7 @@ function App() {
             document.querySelector('.marquee-container').classList.add('white-border');
             document.querySelector('.music-content').classList.remove('black-player-border');
             document.querySelector('.music-content').classList.add('white-player-border');
-        }else {
+        } else {
             document.querySelector('main').style.background = '#FFFFF9';
             document.querySelector('main').style.color = '#0F0F0F';
             document.querySelector('.marquee-container').classList.remove('white-border');
@@ -38,10 +39,11 @@ function App() {
     return (
         <>
 
-            <Navigation displayModeState = {displayModeState} />
+            <Navigation displayModeState={displayModeState} />
 
             {/* Keep main tag */}
             <main>
+                <HeroSection />
                 {/* Remove content in main and add Hero component */}
                 <h1 style={{ textAlign: 'center' }}>Rice Band Site</h1>
                 <div className="remove-later" style={{ textAlign: 'center' }}>
