@@ -7,8 +7,6 @@ import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
 import HeroSection from './views/Hero';
 
-/* Do not forget to import Hero from ./view/Hero' */
-
 function App() {
 
     let [displayState, setDisplayState] = useState(false);

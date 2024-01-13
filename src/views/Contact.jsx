@@ -1,6 +1,28 @@
 import './styles/contact.css'
+import { useRef } from 'react';
+import emailjs from "emailjs-com"
 
 export default function Contact() {
+  const form = useRef();
+  const EMAIL_SERVICE = import.meta.env.EMAIL_SERVICE
+  const EMAIL_TEMPLATE =  import.meta.env.EMAIL_TEMPLATE
+  const PUBLIC_KEY = import.meta.env.PUBLIC_KEY;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(EMAIL_SERVICE, EMAIL_TEMPLATE, form.current, PUBLIC_KEY)
+    .then((result) => {
+      alert("Sent Successfully!");
+      console.log(result);
+    }, (error) => {
+      console.log(error.text);
+    });
+
+    e.target.reset();
+  }
+
+  console.log(import.meta.env.EMAIL_SERVICE);
 
   return (
 
@@ -12,7 +34,7 @@ export default function Contact() {
 
       <div className='contact-container'>
 
-          <form method='POST'>
+          <form ref={form} onSubmit={sendEmail}>
 
             <div className="sender-name">
               {/* <label htmlFor="first_name">First Name</label> */}
@@ -33,7 +55,7 @@ export default function Contact() {
 
             <div className="message">
                 <label htmlFor="event-details">Event Details</label>
-                <textarea name="event-details" id="event-details" cols="80" rows="10" placeholder='Let us know more about your event!' required></textarea>
+                <textarea name="event-details" id="event-details" placeholder='Let us know more about your event!' required></textarea>
             </div>
 
             <div className="submit-button">
@@ -41,7 +63,6 @@ export default function Contact() {
             </div>
           </form>
         </div>
-    </div>
-      
+    </div>     
   )
 }
