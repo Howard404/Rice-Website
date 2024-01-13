@@ -1,6 +1,7 @@
 import './styles/contact.css'
 
 export default function Contact() {
+
   return (
 
     <div className='contact-page'>
@@ -11,7 +12,7 @@ export default function Contact() {
 
       <div className='contact-container'>
 
-          <form method="POST">
+          <form method='POST'>
 
             <div className="sender-name">
               {/* <label htmlFor="first_name">First Name</label> */}
