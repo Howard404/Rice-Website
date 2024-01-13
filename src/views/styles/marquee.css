@@ -1,0 +1,31 @@
+.marquee-container {
+    padding: 100px 0 100px 0;
+    font-size: 8rem;
+    font-weight: 200;
+    margin: 4rem 0 4rem 0;
+}
+
+.white-border {
+    border-top: 1px solid #fffff9;
+    border-bottom: 1px solid #fffff9;
+}
+
+.black-border {
+    border-top: 1px solid #0f0f0f;
+    border-bottom: 1px solid #0f0f0f;
+}
+
+@media (max-width: 1200px) {
+    .marquee-container{
+        font-size: 5rem;
+        padding: 75px 0 75px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .marquee-container{
+        font-size: 3rem;
+        padding: 50px 0 50px 0;
+        margin: 2rem 0 2rem 0;
+    }
+}
