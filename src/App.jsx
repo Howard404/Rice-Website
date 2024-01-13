@@ -4,7 +4,7 @@ import Navigation from './components/Navigation'
 import MarqueeSection from './views/MarqueeSection';
 // import MusicPlayer from './views/MusicPlayer'
 import MusicSection from './views/MusicSection';
-import HeroSection from './views/hero';
+import HeroSection from './views/Hero';
 
 /* Do not forget to import Hero from ./view/Hero' */
 
@@ -42,7 +42,7 @@ function App() {
 
             {/* Keep main tag */}
             <main>
-                <HeroSection></HeroSection>
+                <HeroSection />
                 {/* Remove content in main and add Hero component */}
                 <h1 style={{ textAlign: 'center' }}>Rice Band Site</h1>
                 <div className="remove-later" style={{ textAlign: 'center' }}>

@@ -7,3 +7,9 @@ canvas.ctx {
     height: 100%;
     overflow: hidden;
 }
+
+@media (max-width: 1000px) {
+    canvas.ctx {
+        display: none;
+    }
+}
