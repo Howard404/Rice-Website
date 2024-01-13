@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import MarqueeSection from './views/MarqueeSection';
 // import MusicPlayer from './views/MusicPlayer'
 import MusicSection from './views/MusicSection';
+import Contact from './views/Contact';
 
 /* Do not forget to import Hero from ./view/Hero' */
 
@@ -50,6 +51,8 @@ function App() {
                 <MarqueeSection />
 
                 <MusicSection />
+
+                <Contact />
             </main>
         </>
     )

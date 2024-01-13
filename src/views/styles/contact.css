@@ -1,0 +1,79 @@
+input {
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: .875rem;
+    font-size: 1rem;
+}
+
+textarea {
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+.contact-page {
+    margin: 3rem;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.sender-name {
+    display: flex;
+    align-items: center;
+}
+
+.event-date {
+    margin-top: .5rem;
+}
+
+.message {
+    margin-top: .5rem;
+}
+
+.email {
+    margin-top: 1.275rem;
+}
+
+
+#first_name {
+    margin-right: .5rem;
+}
+
+#last_name {
+    margin-left: .5rem;
+}
+
+#email {
+    width: 100%;
+}
+
+#event_date {
+    width: 100%;
+}
