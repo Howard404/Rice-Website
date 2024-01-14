@@ -35,7 +35,7 @@ label {
 }
 
 .contact-page {
-    margin-top: 5rem;
+    padding: 7rem 0;
 }
 
 .contact-heading {
@@ -44,7 +44,7 @@ label {
 }
 
 .contact-container {
-    margin: 0 30%;
+    margin: 0 33%;
 }
 
 .sender-name {
@@ -62,6 +62,18 @@ label {
 
 .email {
     margin-top: 1.275rem;
+}
+
+.submit-button {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: rgb(63, 63, 255);
+    color: white;
+    width: 100%;
+    cursor: pointer;
 }
 
 
