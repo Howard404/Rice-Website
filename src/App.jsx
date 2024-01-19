@@ -6,6 +6,7 @@ import MarqueeSection from './views/MarqueeSection';
 import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
 import HeroSection from './views/Hero';
+import InstagramSection from './views/InstagramSection';
 
 function App() {
 
@@ -51,6 +52,8 @@ function App() {
                 <MarqueeSection />
 
                 <MusicSection />
+
+                <InstagramSection />
 
                 <Contact />
             </main>
