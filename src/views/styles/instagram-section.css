@@ -1,0 +1,17 @@
+.instagram-container {
+    margin: 5rem auto 0 auto;
+    max-width: 2300px;
+}
+
+.instagram-container > h1 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+    .instagram-container > h1 {
+        font-size: 2rem;
+    }
+}
