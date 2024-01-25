@@ -62,11 +62,15 @@ export default function Navigation({displayModeState}) {
                             </li>
 
                             <li>
-                                <a href="#" className='nav-link'>EPK</a>
+                                <a href="#" className='nav-link'>CONTACT</a>
                             </li>
 
                             <li>
-                                <a href="#" className='nav-link'>NEWSLETTER</a>
+                                <a href="#" className='nav-link'>MERCH</a>
+                            </li>
+
+                            <li>
+                                <a href="#" className='nav-link'>EPK</a>
                             </li>
                         </ul>
                     </div>

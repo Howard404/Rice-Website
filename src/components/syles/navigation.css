@@ -48,7 +48,7 @@
     list-style: none;
     text-decoration: none;
     margin-right: 8px;
-    color: #0F0F0F;
+    color: #0f0f0f;
     font-size: 1.2rem;
     font-weight: 500;
 
@@ -119,6 +119,18 @@ span > img {
         z-index: 1;
     }
 
+    .nav-link {
+        color: #e9e9e9;
+    }
+
+    .nav-link::before {
+        background-color: #39B5E0;
+    }
+    
+    .nav-link:hover {
+        color: #39B5E0;
+    }
+
     .logo{
         z-index: 1;
     }
@@ -132,7 +144,9 @@ span > img {
         justify-content: center;
         align-items: center;
         height: 100%;
-        background-color: #39B5E0;
+        /* background-color: #39B5E0; */
+        background: url('/images/Ryan.jpg') no-repeat center center;
+        background-size: cover;
         width: 0%;
         transition: width 0.5s ease;
     }
@@ -151,8 +165,9 @@ span > img {
         text-align: center;
     }
 
-    a {    
-        font-size: 1.8rem;
+    .nav-link {    
+        font-size: 2rem;
         letter-spacing: 4px;
+        font-weight: 600;
     }
 }
