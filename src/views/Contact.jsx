@@ -3,6 +3,8 @@ import { useRef } from 'react';
 import emailjs from "emailjs-com"
 
 export default function Contact() {
+
+  // EmailJS: Takes a form and renders the email through EMAIL.js
   const form = useRef();
   const EMAIL_SERVICE = import.meta.env.EMAIL_SERVICE
   const EMAIL_TEMPLATE =  import.meta.env.EMAIL_TEMPLATE
@@ -22,7 +24,17 @@ export default function Contact() {
     e.target.reset();
   }
 
-  console.log(import.meta.env.EMAIL_SERVICE);
+  // console.log(import.meta.env.EMAIL_SERVICE);
+
+  // getDate function retrieves the current date from the Date object
+  function getDate() {
+    const date = new Date();
+
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const day = date.getDate();
+    return `${year}-${(month < 10 ? '0' : '') + month}-${(day < 10 ? '0' : '') + day}`
+  }
 
   return (
 
@@ -49,7 +61,7 @@ export default function Contact() {
 
             <div className="event-date">
                 <label htmlFor="date">Event Date</label>
-                <input type="date" id="event_date" name="event_date"/>
+                <input type="date" id="event_date" name="event_date" min={getDate()}/>
             </div>
             
 

@@ -54,19 +54,19 @@ export default function Navigation({displayModeState}) {
                     <div className='menu_items_mobile'>  
                         <ul className="menu">
                             <li>
-                                <a href="#">HOME</a>
+                                <a href="#" className='nav-link'>HOME</a>
                             </li>
 
                             <li>
-                                <a href="#">TOUR</a>
+                                <a href="#" className='nav-link'>TOUR</a>
                             </li>
 
                             <li>
-                                <a href="#">EPK</a>
+                                <a href="#" className='nav-link'>EPK</a>
                             </li>
 
                             <li>
-                                <a href="#">NEWSLETTER</a>
+                                <a href="#" className='nav-link'>NEWSLETTER</a>
                             </li>
                         </ul>
                     </div>

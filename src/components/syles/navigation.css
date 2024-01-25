@@ -34,7 +34,7 @@
     margin: 0;
 }
 
-.menu > li, a {
+.menu > li, .nav-link {
     list-style: none;
     text-decoration: none;
     margin-right: 8px;
@@ -43,7 +43,7 @@
     font-weight: 500;
 }
 
-a {
+.nav-link {
     position: relative;
     list-style: none;
     text-decoration: none;
@@ -57,11 +57,11 @@ a {
     /* letter-spacing: 4px; */
 }
 
-a:hover {
+.nav-link:hover {
     color: #000;
 }
 
-a::before {
+.nav-link::before {
     content: "";
     position: absolute;
     display: block;
@@ -75,7 +75,7 @@ a::before {
     transition: transform 0.3s ease;
 }
 
-a:hover::before {
+.nav-link:hover::before {
     transform: scaleX(1);
 }
 /* CHANGE LATER WHEN MOBILE */
