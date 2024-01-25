@@ -25,6 +25,7 @@ textarea:focus {
 
 form {
     width: 100%;
+    max-width: 800px;
 }
 input[type="text"] {
     width: 100%;
@@ -40,11 +41,15 @@ label {
 
 .contact-heading {
     text-align: center;
-    font-size: 1.875rem;
+}
+
+.contact-heading > h1 {
+    font-size: 5rem;
 }
 
 .contact-container {
-    margin: 0 33%;
+    display: flex;
+    justify-content: center;
 }
 
 .sender-name {
@@ -53,15 +58,15 @@ label {
 }
 
 .event-date {
-    margin-top: .5rem;
+    margin-top: 1.275rem;
 }
 
 .message {
-    margin-top: .5rem;
+    margin-top: 1.275rem;
 }
 
 .email {
-    margin-top: 1.275rem;
+    margin-top: 1.6rem;
 }
 
 .submit-button {
@@ -93,14 +98,34 @@ input[type="submit"] {
     width: 100%;
 }
 
-@media (max-width: 2000px) {
-    .contact-container {
-        margin: 0 25%;
-    }
-}
 
 @media (max-width: 1200px) {
     .contact-container {
-        margin: 0 8%;
+        margin: 0 8px;
+    }
+
+    .contact-page {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-heading > h1 {
+        font-size: 2.5rem;
+    }
+
+    .sender-name {
+        flex-wrap: wrap;
+    }
+
+    #first_name {
+        margin: 0;
+        margin-top: .5rem;
+    }
+
+    #last_name {
+        margin-left: 0;
+        margin-top: 1.5rem;
     }
 }
