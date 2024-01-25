@@ -41,7 +41,7 @@ export default function Contact() {
     <div className='contact-page'>
 
       <div className="contact-heading">
-        <h1>Book a Show!</h1>
+        <h1>Book a Show! 📒</h1>
       </div>
 
       <div className='contact-container'>
