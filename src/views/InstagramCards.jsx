@@ -2,8 +2,6 @@ import "./styles/instagram-cards.css"
 
 function InstagramCards() {
 
-
-
   return (
     <div className="cards">
 
