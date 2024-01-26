@@ -8,15 +8,53 @@
 }
 
 .music-header h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
 }
 
 .music-header h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .music-subheader {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+}
+
+.social-media {
+    margin-top: 2rem;
+    font-size: 5rem;
+}
+
+.facebook {
+    color: 	#1877F2;
+}
+
+.spotify {
+    color: 	#1DB954;
+}
+
+/* .apple {
+    color:#c2cad7;
+} */
+
+.youtube {
+    color: #FF0000;
+}
+
+.instagram {
+    color: #c13584;
+}
+
+.social-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    rotate: 0deg;
+
+    transition: rotate .2s ease-in-out;
+}
+
+.social-link:hover {
+    rotate: 15deg;
 }
 
 @media (max-width: 1500px) {
@@ -26,6 +64,10 @@
     
     .music-header h2 {
         font-size: 1.875rem;
+        text-align: center;
+    }
+
+    .social-media {
         text-align: center;
     }
 }
@@ -43,5 +85,16 @@
 
     .music-subheader {
         margin-top: 1rem;
+    }
+
+    .social-media {
+        margin-top: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .social-link {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        cursor: pointer;
     }
 }
