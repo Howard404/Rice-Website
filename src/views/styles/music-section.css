@@ -32,9 +32,9 @@
     color: 	#1DB954;
 }
 
-/* .apple {
-    color:#c2cad7;
-} */
+.apple {
+    color: inherit;
+}
 
 .youtube {
     color: #FF0000;
