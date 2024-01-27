@@ -12,6 +12,7 @@ export default function MusicSection() {
                 <h1>Check Out Our Sound! 🎸</h1>
 
                 <div className="music-subheader">
+                    <h2>Need more music?</h2>
                     <h2>Want more Rice Band?</h2>
                     <h2>Stay updated by following us on social media! 🙇‍♂️</h2>
                 </div>

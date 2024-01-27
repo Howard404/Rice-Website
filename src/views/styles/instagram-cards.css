@@ -92,7 +92,7 @@
     .cards {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(7, 17vw);
-        gap: 0;
+        gap: .5rem;
     }
 
     .item-1 {
