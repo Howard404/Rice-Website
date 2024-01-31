@@ -1,4 +1,21 @@
 /* CSS for App.jsx */
 
+.dark-mode {
+    background-color: #0F0F0F;
+    color: #FFFFF9
+}
 
+.light-mode {
+    background-color: #FFFFF9;
+    color: #0F0F0F;
+}
 
+.white-border {
+    border-top: 1px solid #fffff9;
+    border-bottom: 1px solid #fffff9;
+}
+
+.black-border {
+    border-top: 1px solid #0f0f0f;
+    border-bottom: 1px solid #0f0f0f;
+}
