@@ -81,6 +81,10 @@
 }
 
 @media (max-width: 800px) {
+    .music-content {
+        max-width: 325px;
+    }
+
     .music-image-song {
         gap: 1rem;
     }

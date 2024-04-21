@@ -41,7 +41,7 @@ export default function Contact() {
     <div className='contact-page' id='contact'>
 
       <div className="contact-heading">
-        <h1>Book a Show! 📒</h1>
+        <h1>Book a Show!</h1>
       </div>
 
       <div className='contact-container'>
@@ -50,9 +50,9 @@ export default function Contact() {
 
             <div className="sender-name">
               {/* <label htmlFor="first_name">First Name</label> */}
-              <input type="text" name="first_name" id="first_name" placeholder='First Name' required/>
+              <input type="text" name="name" id="name" placeholder='Name' required/>
 
-              <input type="text" name="last_name" id="last_name" placeholder='Last Name' required/>
+              {/* <input type="text" name="last_name" id="last_name" placeholder='Last Name' required/> */}
             </div>
 
             <div className="email">

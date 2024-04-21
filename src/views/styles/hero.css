@@ -117,6 +117,9 @@
 }
 
 @media (max-width: 700px) {
+    .hero-image {
+        margin-top: 9rem;
+    }
     .hero-header-right {
         font-size: 1.875rem;
     }
