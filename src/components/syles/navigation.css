@@ -154,7 +154,9 @@ span > img {
     height: 100%;
     /* background-color: #39B5E0; */
     background: url('/images/Ryan.jpg') no-repeat center center;
+    /* -webkit-background: url('/images/Ryan.jpg') no-repeat center center; */
     background-size: cover;
+    /* -webkit-background-size: cover; */
     width: 0%;
     transition: width 0.5s ease;
 }
