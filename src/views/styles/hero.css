@@ -92,6 +92,15 @@
     .hero-header-bottom {
         font-size: 3.5rem;
     }
+
+    .stream-btn {
+        font-size: 1.375rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-image {
+        width: 50%;
+    }
 }
 
 @media (max-width: 970px) {

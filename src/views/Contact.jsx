@@ -71,10 +71,14 @@ export default function Contact() {
             </div>
 
             <div className="submit-button">
-                <input type="submit" />
+                <input type="submit" value="SUBMIT"/>
             </div>
           </form>
         </div>
+
+        {/* <div className="alternative-contact">
+          <p className="alt-contact">Or email directly: thericeoffice@gmail.com</p>
+        </div> */}
     </div>     
   )
 }
