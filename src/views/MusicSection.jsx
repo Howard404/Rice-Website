@@ -5,7 +5,7 @@ import './styles/music-section.css';
 
 export default function MusicSection() {
   return (
-    <div className="music-section-container">
+    <div className="music-section-container" id="media">
         <div className="music-section">
 
             <div className="music-header">

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css'
 import Navigation from './components/Navigation'
-import MarqueeSection from './views/MarqueeSection';
+// import MarqueeSection from './views/MarqueeSection';
 // import MusicPlayer from './views/MusicPlayer'
+import Tour from './views/Tour'
 import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
 import HeroSection from './views/hero';
@@ -44,7 +45,9 @@ function App() {
             <main>
                 <HeroSection />
 
-                <MarqueeSection />
+                {/* <MarqueeSection /> */}
+
+                <Tour />
 
                 <MusicSection />
 

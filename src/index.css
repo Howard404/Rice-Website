@@ -16,6 +16,8 @@
     font-family: 'Bodoni Moda', serif;
     /* font-family: 'Anton', sans-serif; */
 
+    scroll-behavior: smooth;
+
 }
 
 body {
