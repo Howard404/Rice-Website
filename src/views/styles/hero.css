@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
    /* background-color: #39B5E0; */
-   background: url(/images/new_hero.jpeg) no-repeat center center fixed;
+   background: url(/images/new_hero.jpeg) no-repeat center scroll;
    background-size: cover;
 }
 
