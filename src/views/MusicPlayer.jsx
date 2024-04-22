@@ -84,7 +84,7 @@ export default function MusicPlayer() {
             {/* <div className="shuffle-volume-container"> */}
                 {/* <ShuffleIcon sx={{cursor: 'pointer'}}/>
                 <VolumeUpIcon sx={{cursor: 'pointer'}}/> */}
-                <VolumeShuffle{...{audioRef}}/>
+                <VolumeShuffle{...{audioRef, tracks, setTrackIndex, setCurrentTrack}}/>
             {/* </div> */}
         </div>
     </div>
