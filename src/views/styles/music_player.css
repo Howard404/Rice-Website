@@ -31,6 +31,10 @@
     gap: 1rem;
 }
 
+.progress-bar-container {
+    text-align: center;
+}
+
 .music-image-song img {
     width: 100%;
 }

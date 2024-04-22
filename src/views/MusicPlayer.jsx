@@ -1,16 +1,29 @@
 
 import './styles/music_player.css'
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import useMediaQuery from '@mui/material/useMediaQuery';
+
+import { useRef, useState } from 'react';
+import { tracks } from  './data/tracks'
+// import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+// import SkipNextIcon from '@mui/icons-material/SkipNext';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import useMediaQuery from '@mui/material/useMediaQuery';
+import Controls from './Controls';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 
+import ProgressBar from './ProgressBar';
+
+import DisplayTrack from './DisplayTrack';
+
 export default function MusicPlayer() {
 
-    const viewport = useMediaQuery('(max-width:800px)');
+    // const viewport = useMediaQuery('(max-width:800px)');
+
+    const [currentTrack, setCurrentTrack] = useState(tracks[0]);
+
+    const audioRef = useRef();
+    console.log(audioRef);
 
   return (
     <div className='music-container'>
@@ -20,16 +33,23 @@ export default function MusicPlayer() {
                 <img src="/images/song_1.jpg" alt="Ryan" />
 
                 <div className="artist-song">
-                    <h1>Rice</h1>
-                    <h3>Slow Down</h3>
+                    <DisplayTrack 
+                    currentTrack={ currentTrack }
+                    audioRef={audioRef}
+                    />
                 </div>
             </div>
 
+            <div className="progress-bar-container">
+                <ProgressBar/>
+            </div>                
+
             <div className="music-controls">
                 <div className="controls">
-                    <SkipPreviousIcon sx={{fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/>
+                    <Controls audioRef={audioRef}/>
+                    {/* <SkipPreviousIcon sx={{fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/>
                     <PlayArrowIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', margin: '1rem 3rem 0 3rem', cursor: 'pointer', border: '1px #0f0f0f solid', borderRadius: '25px'}}/>
-                    <SkipNextIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/>
+                    <SkipNextIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/> */}
                 </div>
             </div>
 
