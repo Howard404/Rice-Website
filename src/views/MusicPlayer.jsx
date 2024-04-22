@@ -12,7 +12,7 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 
-import ProgressBar from './ProgressBar';
+// import ProgressBar from './ProgressBar';
 
 import DisplayTrack from './DisplayTrack';
 
@@ -21,9 +21,13 @@ export default function MusicPlayer() {
     // const viewport = useMediaQuery('(max-width:800px)');
 
     const [currentTrack, setCurrentTrack] = useState(tracks[0]);
+    // const [timeProgress, setTimeProgress] = useState(0);
+    // const [duration, setDuration] = useState(0);
 
     const audioRef = useRef();
-    console.log(audioRef);
+    // const progressBarRef = useRef();
+
+    
 
   return (
     <div className='music-container'>
@@ -40,9 +44,9 @@ export default function MusicPlayer() {
                 </div>
             </div>
 
-            <div className="progress-bar-container">
-                <ProgressBar/>
-            </div>                
+            {/* <div className="progress-bar-container">
+                <ProgressBar {...{progressBarRef, audioRef, timeProgress, duration}}/>
+            </div>                 */}
 
             <div className="music-controls">
                 <div className="controls">

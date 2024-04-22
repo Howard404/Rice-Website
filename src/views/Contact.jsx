@@ -51,18 +51,18 @@ export default function Contact() {
 
             <div className="sender-name">
               {/* <label htmlFor="first_name">First Name</label> */}
-              <input type="text" name="name" id="name" placeholder='Name' required/>
+              <input type="text" name="name" id="name" placeholder='Name' className='contact-input' required/>
 
               {/* <input type="text" name="last_name" id="last_name" placeholder='Last Name' required/> */}
             </div>
 
             <div className="email">
-                <input type="email" name="email" id="email" placeholder='yourname@email.com' required/>
+                <input type="email" name="email" id="email" placeholder='yourname@email.com' className='contact-input' required/>
             </div>
 
             <div className="event-date">
                 {/* <label htmlFor="date">Event Date</label> */}
-                <input type="date" id="event_date" name="event_date" min={getDate()}/>
+                <input type="date" id="event_date" name="event_date" min={getDate()} className='contact-input'/>
             </div>
             
 
@@ -72,7 +72,7 @@ export default function Contact() {
             </div>
 
             <div className="submit-button">
-                <input type="submit" value="SUBMIT"/>
+                <input type="submit" value="SUBMIT" className='contact-input'/>
             </div>
           </form>
         </div>
