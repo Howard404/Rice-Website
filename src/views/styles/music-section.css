@@ -66,11 +66,11 @@
     rotate: 15deg;
 }
 
-@media (max-width: 1570px) {
+@media (max-width: 1350px) {
 
-    /* .music-section {
+    .music-section {
         height: 100%;
-    } */
+    }
     .music-header h1 {
         font-size: 4rem;
     }
