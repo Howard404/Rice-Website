@@ -41,7 +41,8 @@ export default function Contact() {
     <div className='contact-page' id='contact'>
 
       <div className="contact-heading">
-        <h1>Book a Show!</h1>
+        <h1>Contact</h1>
+        <h3>Book a show...</h3>
       </div>
 
       <div className='contact-container'>
@@ -56,17 +57,17 @@ export default function Contact() {
             </div>
 
             <div className="email">
-                <input type="email" name="email" id="email" placeholder='yourname@gmail.com' required/>
+                <input type="email" name="email" id="email" placeholder='yourname@email.com' required/>
             </div>
 
             <div className="event-date">
-                <label htmlFor="date">Event Date</label>
+                {/* <label htmlFor="date">Event Date</label> */}
                 <input type="date" id="event_date" name="event_date" min={getDate()}/>
             </div>
             
 
             <div className="message">
-                <label htmlFor="event-details">Event Details</label>
+                {/* <label htmlFor="event-details">Event Details</label> */}
                 <textarea name="event-details" id="event-details" placeholder='Let us know more about your event!' required></textarea>
             </div>
 
