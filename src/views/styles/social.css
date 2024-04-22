@@ -1,0 +1,40 @@
+.social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: 1.25rem;
+    bottom: 0;
+    left: 0;
+}
+
+.facebook {
+    color: 	#f0f0f0;
+    background-color: #0f0f0f;
+}
+
+.spotify {
+    color: #f0f0f0;
+    background-color: #1DB954;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.apple {
+    color: inherit;
+}
+
+.youtube {
+    color: #f0f0f0;
+    background-color: #FF0000;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.instagram {
+    color: #f0f0f0;
+    background-color: #c13584;
+    padding: 5px;
+    border-radius: 15px;
+}

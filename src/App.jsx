@@ -8,6 +8,7 @@ import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
 import HeroSection from './views/hero';
 import InstagramPosts from './views/InstagramPosts'
+import Social from './views/Social';
 // import InstagramSection from './views/InstagramSection';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             <Navigation displayModeState={displayModeState} />
 
             {/* Keep main tag */}
+            <Social />
             <main>
                 <HeroSection />
 
