@@ -59,10 +59,10 @@ export default function Navigation() {
                             <li>
                                 <a href="#contact" className='nav-link'>CONTACT</a>
                             </li>
-
+{/* 
                             <li>
                                 <a href="#" className='nav-link'>EPK</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 

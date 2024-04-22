@@ -1,4 +1,5 @@
-import MusicPlayer from "./MusicPlayer";
+// import MusicPlayer from "./MusicPlayer";
+import SoundCloud from 'react-player'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faSpotify, faApple, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import './styles/music-section.css';
@@ -25,8 +26,30 @@ export default function MusicSection() {
                   <a href="https://www.youtube.com/channel/UCSJPQxuLdEhMj8sCeu1m2Qw/featured"><FontAwesomeIcon icon={faYoutube} className="social-link youtube"/></a>
                 </div>
             </div>
-            <MusicPlayer/>
+
+            <SoundCloud
+              url={'https://soundcloud.com/thebandrice/sets/ross-tuesdays'}
+              width={600}
+              height={550}
+              config={{
+                soundcloud: {
+                  options: {show_artwork: false}
+                }
+              }}
+              className='sound-cloud'
+            />
+            {/* <MusicPlayer/> */}
         </div>
+
     </div>
   )
 }
+
+{/* <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/728289963&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
+
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+  
+  <a href="https://soundcloud.com/thebandrice" title="Rice" target="_blank" style="color: #cccccc; text-decoration: none;">Rice</a> · 
+  <a href="https://soundcloud.com/thebandrice/sets/ross-tuesdays" title="Ross Tuesdays" target="_blank" style="color: #cccccc; text-decoration: none;">Ross Tuesdays</a>
+  
+</div> */}

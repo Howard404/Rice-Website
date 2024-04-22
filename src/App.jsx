@@ -7,7 +7,8 @@ import Tour from './views/Tour'
 import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
 import HeroSection from './views/hero';
-import InstagramSection from './views/InstagramSection';
+import InstagramPosts from './views/InstagramPosts'
+// import InstagramSection from './views/InstagramSection';
 
 function App() {
 
@@ -51,7 +52,9 @@ function App() {
 
                 <MusicSection />
 
-                <InstagramSection />
+                < InstagramPosts />
+
+                {/* <InstagramSection /> */}
 
                 <Contact />
             </main>

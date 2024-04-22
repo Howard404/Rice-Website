@@ -26,7 +26,7 @@ function InstagramSection() {
   // ];
   return (
     <div className="instagram-container">
-      <h1>Highlight Reel 📸</h1>
+      {/* <h1>Highlight Reel 📸</h1> */}
       <InstagramCards />
     </div>
   )

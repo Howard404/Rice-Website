@@ -11,6 +11,11 @@
     background-size: cover;
 }
 
+.sound-cloud {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .music-header h1 {
     font-size: 5.5rem;
 }

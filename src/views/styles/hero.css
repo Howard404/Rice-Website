@@ -50,7 +50,6 @@
 
 .hero-image {
     width: 30%;
-    background-color: lch(50 150 40);
     border-radius: 7px;
     box-shadow: -25px 30px 25px rgba( 0 0 0 / 30%);
     cursor: pointer;
