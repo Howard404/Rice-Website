@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './App.css'
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
 // import MarqueeSection from './views/MarqueeSection';
 // import MusicPlayer from './views/MusicPlayer'
 import Tour from './views/Tour'
 import MusicSection from './views/MusicSection';
 import Contact from './views/Contact';
 import HeroSection from './views/hero';
-import InstagramPosts from './views/InstagramPosts'
+import InstagramPosts from './views/InstagramPosts';
 import Social from './views/Social';
 // import InstagramSection from './views/InstagramSection';
 
@@ -17,8 +17,6 @@ function App() {
 
     function displayModeState(state) {
         setDisplayState(state);
-
-        console.log(state);
 
         if (displayState) {
             document.querySelector('main').style.background = '#0F0F0F';
@@ -40,7 +38,6 @@ function App() {
 
     return (
         <>
-
             <Navigation displayModeState={displayModeState} />
 
             {/* Keep main tag */}
