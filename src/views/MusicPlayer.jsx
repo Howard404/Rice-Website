@@ -20,7 +20,8 @@ export default function MusicPlayer() {
 
     // const viewport = useMediaQuery('(max-width:800px)');
 
-    const [currentTrack, setCurrentTrack] = useState(tracks[0]);
+    const [trackIndex, setTrackIndex] = useState(0);
+    const [currentTrack, setCurrentTrack] = useState(tracks[trackIndex]);
     // const [timeProgress, setTimeProgress] = useState(0);
     // const [duration, setDuration] = useState(0);
 
@@ -50,7 +51,15 @@ export default function MusicPlayer() {
 
             <div className="music-controls">
                 <div className="controls">
-                    <Controls audioRef={audioRef}/>
+                    <Controls 
+                    {...{
+                        audioRef,
+                        tracks,
+                        trackIndex,
+                        setTrackIndex,
+                        setCurrentTrack,
+                    }}
+                    />
                     {/* <SkipPreviousIcon sx={{fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/>
                     <PlayArrowIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', margin: '1rem 3rem 0 3rem', cursor: 'pointer', border: '1px #0f0f0f solid', borderRadius: '25px'}}/>
                     <SkipNextIcon sx={{ fontSize: viewport ? '2.5rem' : '3rem', cursor: 'pointer'}}/> */}
