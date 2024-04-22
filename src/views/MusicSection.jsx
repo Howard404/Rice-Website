@@ -1,5 +1,5 @@
-// import MusicPlayer from "./MusicPlayer";
-import SoundCloud from 'react-player'
+import MusicPlayer from "./MusicPlayer";
+// import SoundCloud from 'react-player'
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faFacebook, faSpotify, faApple, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import './styles/music-section.css';
@@ -27,7 +27,7 @@ export default function MusicSection() {
                 </div> */}
             </div>
 
-            <SoundCloud
+            {/* <SoundCloud
               url={'https://soundcloud.com/thebandrice/sets/ross-tuesdays'}
               width={600}
               height={550}
@@ -37,8 +37,8 @@ export default function MusicSection() {
                 }
               }}
               className='sound-cloud'
-            />
-            {/* <MusicPlayer/> */}
+            /> */}
+            <MusicPlayer/>
         </div>
 
     </div>

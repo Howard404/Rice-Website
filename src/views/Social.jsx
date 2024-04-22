@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faSpotify, faApple, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faSpotify, faApple, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import './styles/social.css'
 
 export default function Social() {
