@@ -68,9 +68,9 @@
 
 @media (max-width: 1570px) {
 
-    .music-section {
+    /* .music-section {
         height: 100%;
-    }
+    } */
     .music-header h1 {
         font-size: 4rem;
     }
