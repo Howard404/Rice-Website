@@ -174,9 +174,9 @@ input[type="submit"] {
         height: 100vh;
     }
 
-    .contact-heading > h1 {
+    /* .contact-heading > h1 {
         font-size: 2.5rem;
-    }
+    } */
 
     .sender-name {
         flex-wrap: wrap;
