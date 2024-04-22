@@ -136,6 +136,11 @@ input[type="submit"] {
     width: 100%;
 }
 
+@media (max-width: 1500px) {
+    .contact-page {
+        padding: 10rem 0 5rem 0;
+    }
+}
 
 @media (max-width: 1350px) {
     .contact-page {
