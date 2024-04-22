@@ -28,3 +28,9 @@ height: 100%;
     max-width: 1000px;
     text-align: center;
 }
+
+@media (max-width: 1500px) {
+    .instagram-content {
+        max-width: 650px;
+    }
+}

@@ -10,7 +10,7 @@ export default function MusicSection() {
         <div className="music-section">
 
             <div className="music-header">
-                <h1>Check Out Our Sound! 🎸</h1>
+                <h1 className="music-header-1">Check Out Our Sound!</h1>
 
                 <div className="music-subheader">
                     <h2>Need more music?</h2>
