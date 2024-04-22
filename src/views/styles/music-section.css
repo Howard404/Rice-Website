@@ -21,6 +21,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
+    text-align: center;
 }
 
 .music-header h2 {
@@ -81,12 +82,12 @@
         padding-bottom: 8rem;
     }
 
-    .music-header-1 {
+    /* .music-header-1 {
         font-family: "Bungee Shade", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 4rem;
-    }
+    } */
 
     .music-header h1 {
         font-size: 4rem;
@@ -107,14 +108,18 @@
         /* background-size: 1000px; */
         background-attachment: scroll;
     }
+    
+    .music-header h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 800px) {
-    .music-header h1 {
+    /* .music-header h1 {
         font-size: 2.375rem;
         margin-top: 2rem;
-        text-align: center;
-    }
+    } */
     
     .music-header h2 {
         font-size: 1.375rem;
