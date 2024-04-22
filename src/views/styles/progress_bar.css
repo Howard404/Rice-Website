@@ -1,5 +1,5 @@
 /* progress_bar.css */
-input[type="range"] {
+/* input[type="range"] {
     --range-progress: 0;
 
     margin-right: 8px;
@@ -10,4 +10,4 @@ input[type="range"] {
 input[type="range"]::before {
     background: #f50;
     width: var(--range-progress);
-}
+} */

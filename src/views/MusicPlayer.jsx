@@ -8,13 +8,14 @@ import { tracks } from  './data/tracks'
 // import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 // import useMediaQuery from '@mui/material/useMediaQuery';
 import Controls from './Controls';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import ShuffleIcon from '@mui/icons-material/Shuffle';
+// import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+// import ShuffleIcon from '@mui/icons-material/Shuffle';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 
 // import ProgressBar from './ProgressBar';
 
 import DisplayTrack from './DisplayTrack';
+import VolumeShuffle from './VolumeShuffle'
 
 export default function MusicPlayer() {
 
@@ -80,10 +81,11 @@ export default function MusicPlayer() {
                 </div>
             </div>
 
-            <div className="shuffle-volume-container">
-                <ShuffleIcon sx={{cursor: 'pointer'}}/>
-                <VolumeUpIcon sx={{cursor: 'pointer'}}/>
-            </div>
+            {/* <div className="shuffle-volume-container"> */}
+                {/* <ShuffleIcon sx={{cursor: 'pointer'}}/>
+                <VolumeUpIcon sx={{cursor: 'pointer'}}/> */}
+                <VolumeShuffle{...{audioRef}}/>
+            {/* </div> */}
         </div>
     </div>
   )
