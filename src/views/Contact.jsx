@@ -47,13 +47,10 @@ export default function Contact() {
 
       <div className='contact-container'>
 
-          <form ref={form} onSubmit={sendEmail}>
+          {/* <form ref={form} onSubmit={sendEmail}>
 
             <div className="sender-name">
-              {/* <label htmlFor="first_name">First Name</label> */}
               <input type="text" name="name" id="name" placeholder='Name' className='contact-input' required/>
-
-              {/* <input type="text" name="last_name" id="last_name" placeholder='Last Name' required/> */}
             </div>
 
             <div className="email">
@@ -61,20 +58,21 @@ export default function Contact() {
             </div>
 
             <div className="event-date">
-                {/* <label htmlFor="date">Event Date</label> */}
                 <input type="date" id="event_date" name="event_date" min={getDate()} className='contact-input'/>
             </div>
             
 
             <div className="message">
-                {/* <label htmlFor="event-details">Event Details</label> */}
                 <textarea name="event-details" id="event-details" placeholder='Let us know more about your event!' required></textarea>
             </div>
 
             <div className="submit-button">
                 <input type="submit" value="SUBMIT" className='contact-input'/>
             </div>
-          </form>
+          </form> */}
+
+          <h3>Email: thericeoffice@gmail.com</h3>
+          <h3>Phone: +1 (509) 628-7717</h3>
         </div>
 
         {/* <div className="alternative-contact">
