@@ -104,6 +104,9 @@ input[type="range"] {
 }
 
 @media (max-width: 800px) {
+    input[type="range"] {
+        display: none;
+    }
     .music-content {
         max-width: 325px;
     }

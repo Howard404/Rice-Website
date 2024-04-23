@@ -29,7 +29,15 @@ export default function MusicPlayer() {
     const audioRef = useRef();
     // const progressBarRef = useRef();
 
-    
+    const handleSlowDown = () => {
+        setTrackIndex(0);
+        setCurrentTrack(tracks[0]);
+    }
+
+    const handleHeyRuby = () => {
+        setTrackIndex(1);
+        setCurrentTrack(tracks[1]);
+    }    
 
   return (
     <div className='music-container'>
@@ -67,16 +75,16 @@ export default function MusicPlayer() {
                 </div>
             </div>
 
-            <div className="audio-file">
+            {/* <div className="audio-file">
                 <audio>
                     <source src='/audio/Slow_Down.wav'/>  
                 </audio>
-            </div>
+            </div> */}
 
             <div className="music-song-list">
                 <div className="song-list">
-                    <div className="song slow-down">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Slow Down</span></div>
-                    <div className="song hey-ruby">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Hey Ruby</span></div>
+                    <div className="song slow-down" onClick={handleSlowDown}>< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Slow Down</span></div>
+                    <div className="song hey-ruby" onClick={handleHeyRuby}>< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>Hey Ruby</span></div>
                     <div className="song east-13th">< PlayCircleFilledWhiteIcon sx={{fontSize: '2rem'}}/> <span>East 13<sup>th</sup></span></div>
                 </div>
             </div>
